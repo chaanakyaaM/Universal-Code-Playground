@@ -41,4 +41,5 @@ jobs:
           git add snippets/README.md
           git commit -m "chore: update snippets index" || echo "no changes to commit"
           # push using git (persist-credentials makes GITHUB_TOKEN available to git)
+          git pull --rebase origin main
           git push
