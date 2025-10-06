@@ -285,6 +285,7 @@ This is an auto-generated index. Run `python tools/generate_index.py` to update.
   - [reverse-string.sh](snippets/DataStructures/bash/reverse-string.sh)
   - [stack-example.sh](snippets/DataStructures/bash/stack-example.sh)
 - **c**
+  - [LinkedList.c](snippets/DataStructures/c/LinkedList.c)
   - [binary-search.c](snippets/DataStructures/c/binary-search.c)
   - [bubble-sort.c](snippets/DataStructures/c/bubble-sort.c)
   - [factorial.c](snippets/DataStructures/c/factorial.c)
