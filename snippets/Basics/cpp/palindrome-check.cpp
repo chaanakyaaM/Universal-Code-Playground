@@ -1,6 +1,11 @@
 # Title: Check palindrome
 # Topic: Basics
 # Language: cpp
-# Example: see bottom
 
-// Check palindrome - placeholder in cpp
+#include <iostream>
+using namespace std;
+int main(){
+    string s; cin >> s;
+    string rev = string(s.rbegin(), s.rend());
+    cout << (s == rev ? "Palindrome" : "Not palindrome");
+}
