@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Ask a question
+    url: https://github.com/IamBisrutPyne/Universal-Code-Playground/discussions
+    about: Ask and answer questions in our discussions area.
+  - name: Report a security vulnerability
+    url: https://github.com/IamBisrutPyne/Universal-Code-Playground/security/policy
+    about: Report security issues privately following our security policy.
