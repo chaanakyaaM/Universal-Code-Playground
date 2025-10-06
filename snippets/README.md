@@ -20,6 +20,7 @@ This is an auto-generated index. Run `python tools/generate_index.py` to update.
   - [factorial.c](snippets/Algorithms/c/factorial.c)
   - [fibonacci.c](snippets/Algorithms/c/fibonacci.c)
   - [hello-world.c](snippets/Algorithms/c/hello-world.c)
+  - [linear-search.c](snippets/Algorithms/c/linear-search.c)
   - [merge-sort.c](snippets/Algorithms/c/merge-sort.c)
   - [palindrome-check.c](snippets/Algorithms/c/palindrome-check.c)
   - [prime-check.c](snippets/Algorithms/c/prime-check.c)
