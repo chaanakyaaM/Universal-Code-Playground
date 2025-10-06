@@ -158,6 +158,7 @@ This is an auto-generated index. Run `python tools/generate_index.py` to update.
   - [merge-sort.c](snippets/Basics/c/merge-sort.c)
   - [palindrome-check.c](snippets/Basics/c/palindrome-check.c)
   - [prime-check.c](snippets/Basics/c/prime-check.c)
+  - [reverse-number.c](snippets/Basics/c/reverse-number.c)
   - [reverse-string.c](snippets/Basics/c/reverse-string.c)
   - [stack-example.c](snippets/Basics/c/stack-example.c)
 - **cpp**
