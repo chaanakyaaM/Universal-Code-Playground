@@ -1,3 +1,14 @@
+# Metadata Header (MANDATORY)
+# -----------------------------
+# Program Title: Dijkstra's Shortest Path Algorithm
+# Author: [Chaanakyaa Milkuri/@chaanakyaaM]
+# Date: 2025-10-07
+#
+# Description: Finds the shortest path from a starting node to all other nodes
+# in a weighted, directed graph using a priority queue (heapq).
+# Time Complexity: O(E log V)
+# -----------------------------
+
 import heapq
 
 def dijkstra(graph, start):
