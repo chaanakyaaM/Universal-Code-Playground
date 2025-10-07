@@ -186,7 +186,7 @@ This is an auto-generated index. Run `python tools/generate_index.py` to update.
   - [merge-sort.go](snippets/Basics/go/merge-sort.go)
   - [palindrome-check.go](snippets/Basics/go/palindrome-check.go)
   - [prime-check.go](snippets/Basics/go/prime-check.go)
-  - [reverse-string.go](snippets/Basics/go/reverse-string.go)
+  - [reverse_string.go](snippets/Basics/go/reverse_string.go)
   - [stack-example.go](snippets/Basics/go/stack-example.go)
 - **java**
   - [binary-search.java](snippets/Basics/java/binary-search.java)
