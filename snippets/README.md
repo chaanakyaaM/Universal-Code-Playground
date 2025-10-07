@@ -102,6 +102,7 @@ This is an auto-generated index. Run `python tools/generate_index.py` to update.
   - [merge-sort.py](snippets/Algorithms/python/merge-sort.py)
   - [palindrome-check.py](snippets/Algorithms/python/palindrome-check.py)
   - [prime-check.py](snippets/Algorithms/python/prime-check.py)
+  - [quick_sort.py](snippets/Algorithms/python/quick_sort.py)
   - [reverse-string.py](snippets/Algorithms/python/reverse-string.py)
   - [stack-example.py](snippets/Algorithms/python/stack-example.py)
 - **ruby**
