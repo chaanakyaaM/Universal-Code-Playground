@@ -99,6 +99,7 @@ This is an auto-generated index. Run `python tools/generate_index.py` to update.
   - [factorial.py](snippets/Algorithms/python/factorial.py)
   - [fibonacci.py](snippets/Algorithms/python/fibonacci.py)
   - [hello-world.py](snippets/Algorithms/python/hello-world.py)
+  - [kruskal_algorithm.py](snippets/Algorithms/python/kruskal_algorithm.py)
   - [merge-sort.py](snippets/Algorithms/python/merge-sort.py)
   - [palindrome-check.py](snippets/Algorithms/python/palindrome-check.py)
   - [prime-check.py](snippets/Algorithms/python/prime-check.py)
