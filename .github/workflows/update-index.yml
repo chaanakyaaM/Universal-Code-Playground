@@ -58,6 +58,7 @@ jobs:
 
           # Ensure we have the latest remote main to avoid non-fast-forward
           git fetch origin main
+          git pull origin main --rebase
 
           # Try to rebase onto the latest remote main. If rebase fails, fall back to a merge.
           if git rebase origin/main; then
