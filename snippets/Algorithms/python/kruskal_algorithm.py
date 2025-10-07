@@ -1,4 +1,15 @@
-"""Kruskal's Algorithm to find the Minimum Spanning Tree (MST) of a graph."""
+# Metadata Header (MANDATORY)
+# -----------------------------
+# Program Title: Kruskal's Algorithm for MST
+# Author: [@chaanakyaaM]
+# Date: 2025-10-07
+#
+# Description: Finds the Minimum Spanning Tree (MST) of a weighted, undirected
+# graph using Kruskal's algorithm, which relies on a Disjoint Set Union (DSU)
+# data structure with path compression and union by rank for efficiency.
+# Time Complexity: O(E log E) or O(E log V)
+# Space Complexity: O(V + E)
+# -----------------------------
 
 class DisjointSet:
     def __init__(self, n):
