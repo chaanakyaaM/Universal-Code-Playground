@@ -4,6 +4,7 @@
 # Example: see bottom
 # Iterative factorial - placeholder in ruby
 # Function to calculate factorial iteratively
+
 def factorial_iterative(n)
   result = 1
   for i in 1..n
