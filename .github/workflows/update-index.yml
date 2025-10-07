@@ -58,7 +58,6 @@ jobs:
 
           # Ensure we have the latest remote main to avoid non-fast-forward
           git fetch origin main
-          git pull origin main --rebase
 
           # Try to rebase onto the latest remote main. If rebase fails, fall back to a merge.
           if git rebase origin/main; then
@@ -70,4 +69,6 @@ jobs:
           fi
 
           # Push to the current branch (HEAD) explicitly
-          git push origin HEAD:${{ github.ref_name }}
+          git pull origin main --rebase
+          git push origin main
+          # git push origin HEAD:${{ github.ref_name }}
