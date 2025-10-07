@@ -56,7 +56,6 @@ This is an auto-generated index. Run `python tools/generate_index.py` to update.
   - [factorial.java](snippets/Algorithms/java/factorial.java)
   - [fibonacci.java](snippets/Algorithms/java/fibonacci.java)
   - [hello-world.java](snippets/Algorithms/java/hello-world.java)
-  - [merge-sort.java](snippets/Algorithms/java/merge-sort.java)
   - [palindrome-check.java](snippets/Algorithms/java/palindrome-check.java)
   - [prime-check.java](snippets/Algorithms/java/prime-check.java)
   - [reverse-string.java](snippets/Algorithms/java/reverse-string.java)
