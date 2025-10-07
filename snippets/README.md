@@ -93,9 +93,9 @@ This is an auto-generated index. Run `python tools/generate_index.py` to update.
   - [reverse-string.php](snippets/Algorithms/php/reverse-string.php)
   - [stack-example.php](snippets/Algorithms/php/stack-example.php)
 - **python**
-  - [Dijkstra.py](snippets/Algorithms/python/Dijkstra.py)
   - [binary-search.py](snippets/Algorithms/python/binary-search.py)
   - [bubble-sort.py](snippets/Algorithms/python/bubble-sort.py)
+  - [dijkstra.py](snippets/Algorithms/python/dijkstra.py)
   - [factorial.py](snippets/Algorithms/python/factorial.py)
   - [fibonacci.py](snippets/Algorithms/python/fibonacci.py)
   - [hello-world.py](snippets/Algorithms/python/hello-world.py)
