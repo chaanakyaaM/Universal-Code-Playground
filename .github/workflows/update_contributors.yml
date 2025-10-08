@@ -1,0 +1,59 @@
+name: Update Contributors List
+on:
+  # Run daily at 00:00 UTC
+  schedule:
+    - cron: '0 0 * * *'
+  # Also run when the index updates if you want
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-list:
+    runs-on: ubuntu-latest
+    
+    # Ensure the bot doesn't trigger itself if run manually
+    if: github.actor != 'github-actions[bot]'
+
+    steps:
+      - name: Checkout repository (full history)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install requirements
+        run: pip install PyGithub
+
+      - name: Run contributor update script
+        env:
+          GITHUB_REPO: ${{ github.repository }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python tools/update_contributors.py
+
+      - name: Commit and push CONTRIBUTORS.md (safe merge)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          git add CONTRIBUTORS.md
+
+          # If nothing staged -> nothing to do
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+
+          git commit -m "chore: update contributors list"
+
+          # Use the safe push strategy (pull/rebase/push)
+          git pull origin main --rebase
+          git push
