@@ -69,4 +69,6 @@ jobs:
           fi
 
           # Push to the current branch (HEAD) explicitly
-          git push origin HEAD:${{ github.ref_name }}
+          git pull origin main --rebase
+          git push origin main
+          # git push origin HEAD:${{ github.ref_name }}
