@@ -95,6 +95,7 @@ This is an auto-generated index. Run `python tools/generate_index.py` to update.
   - [reverse-string.php](snippets/Algorithms/php/reverse-string.php)
   - [stack-example.php](snippets/Algorithms/php/stack-example.php)
 - **python**
+  - [bellman_ford.py](snippets/Algorithms/python/bellman_ford.py)
   - [binary-search.py](snippets/Algorithms/python/binary-search.py)
   - [bubble-sort.py](snippets/Algorithms/python/bubble-sort.py)
   - [dijkstra.py](snippets/Algorithms/python/dijkstra.py)
