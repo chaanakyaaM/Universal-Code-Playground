@@ -79,4 +79,3 @@ if method == "memo" || method == "both"
   puts fibonacci_memo_series(n).join(", ")
   puts
 end
-
