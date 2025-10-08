@@ -4,6 +4,8 @@ on:
     branches: [ main ]
   pull_request:
     types: [closed]
+  # Allows manual triggering
+  workflow_dispatch: 
 
 # allow pushes
 permissions:
@@ -21,7 +23,8 @@ jobs:
       - name: Checkout repository (full history & credentials)
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          # Fetch depth 0 is crucial for proper rebase/merge history
+          fetch-depth: 0 
           persist-credentials: true
 
       - name: Set up Python
@@ -38,7 +41,7 @@ jobs:
       - name: Generate index
         run: python tools/generate_index.py
 
-      - name: Commit and push index (safe, merges remote if necessary)
+      - name: Commit and push index (Safe Rebase Strategy)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -46,6 +49,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
+          # Only track the generated index file
           git add snippets/README.md
 
           # If nothing staged -> nothing to do
@@ -56,19 +60,11 @@ jobs:
 
           git commit -m "chore: update snippets index"
 
-          # Ensure we have the latest remote main to avoid non-fast-forward
-          git fetch origin main
-
-          # Try to rebase onto the latest remote main. If rebase fails, fall back to a merge.
-          if git rebase origin/main; then
-            echo "Rebase successful"
-          else
-            echo "Rebase failed; aborting rebase and trying merge"
-            git rebase --abort || true
-            git merge --no-edit origin/main
-          fi
-
-          # Push to the current branch (HEAD) explicitly
+          # --- SAFE PUSH STRATEGY ---
+          # 1. Pull remote changes and reapply the local commit on top (rebase).
+          #    This is the simplest way to avoid non-fast-forward push rejections.
+          echo "Syncing with remote main before push..."
           git pull origin main --rebase
+          
+          # 2. Push the result back to main.
           git push origin main
-          # git push origin HEAD:${{ github.ref_name }}
