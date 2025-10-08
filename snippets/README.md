@@ -247,7 +247,6 @@ This is an auto-generated index. Run `python tools/generate_index.py` to update.
 - **ruby**
   - [binary-search.rb](snippets/Basics/ruby/binary-search.rb)
   - [bubble-sort.rb](snippets/Basics/ruby/bubble-sort.rb)
-  - [factorial.rb](snippets/Basics/ruby/factorial.rb)
   - [fibonacci.rb](snippets/Basics/ruby/fibonacci.rb)
   - [hello-world.rb](snippets/Basics/ruby/hello-world.rb)
   - [merge-sort.rb](snippets/Basics/ruby/merge-sort.rb)
