@@ -49,6 +49,7 @@ This is an auto-generated index. Run `python tools/generate_index.py` to update.
   - [reverse-string.go](snippets/Algorithms/go/reverse-string.go)
   - [stack-example.go](snippets/Algorithms/go/stack-example.go)
 - **java**
+  - [BinarySearch.java](snippets/Algorithms/java/BinarySearch.java)
   - [DijkstraAlgorithm.java](snippets/Algorithms/java/DijkstraAlgorithm.java)
   - [binary-search.java](snippets/Algorithms/java/binary-search.java)
   - [bubble-sort.java](snippets/Algorithms/java/bubble-sort.java)
